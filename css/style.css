@@ -1,7 +1,7 @@
 /*
 Template: Riso - Restaurant HTML Template
 Version: 1.0
-Design and Developed by: Peaceful Qode
+
 
 NOTE: This is main stylesheet of template, This file contains the styling for the actual Template. Please do not change anything here! write in a custom.css file if required!
 */
@@ -381,7 +381,7 @@ select.form-control {
 
 /*+++++++++++++Section +++++++++++++++*/
 section {
-	padding: 130px 0;
+	padding: 60px 0;
 	position: relative;
 }
 
@@ -2761,6 +2761,7 @@ Section Title
 
 .pq-section-title-style-1 {
 	margin-bottom: 30px;
+	text-align: center;
 }
 
 .pq-section-title-style-1 p {
@@ -3383,8 +3384,8 @@ Portfoliobox
 Team
 +++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .team2 {
-	margin-bottom: -330px;
-	padding: 130px 0 0 0;
+	margin-bottom: 30px;
+	padding: 60px 0 0 0;
 }
 
 .pq-team-style-1 .pq-team-img {
@@ -3673,7 +3674,7 @@ Testimonialbox
 }
 
 .pq-testimonial-bg-img img {
-	height: 895px;
+	height: auto;
 }
 
 .pq-testimonialbox-1 {
@@ -4110,8 +4111,8 @@ Advance Tab
 	font-weight: 400;
 	margin-bottom: 15px;
 	/* text-transform: none; */
-	min-width: 30%;
-	max-width: 30%;
+	min-width: 20%;
+	max-width: 20%;
 }
 
 .pq-food-price-desc {
@@ -4378,10 +4379,10 @@ FAQ
 }
 
 /*================================================
-CTA
+							CTA
 ================================================*/
 .cta {
-	padding: 90px 0;
+	padding: 120px 0;
 }
 
 .pq-cta-bg-img:before {

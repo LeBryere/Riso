@@ -1,7 +1,7 @@
 /*
 Template: Riso - Restaurant HTML Template
 Version: 1.0
-Design and Developed by: Peaceful Qode
+
 
 */
 
@@ -152,17 +152,17 @@ Design and Developed by: Peaceful Qode
       [ Progressbar ]
       ==================================================*/
 
-      jQuery('.pq-progress-bar > span').each(function() {
-       var app_slider = jQuery('.pq-progressbar-box-1');
-       jQuery(this).progressBar({
-         shadow: false,
-         animation: true,
-         height: app_slider.data('h'),
-         percentage: false,
-         border: false,
-         animateTarget: true,
+      jQuery('.pq-progress-bar > span').each(function () {
+         var app_slider = jQuery('.pq-progressbar-box-1');
+         jQuery(this).progressBar({
+            shadow: false,
+            animation: true,
+            height: app_slider.data('h'),
+            percentage: false,
+            border: false,
+            animateTarget: true,
+         });
       });
-    });
 
 
    });
@@ -212,51 +212,51 @@ Design and Developed by: Peaceful Qode
 
 
 
-  if ($('.pq-masonry').length > 0) {
-    // Do something if class exists
+   if ($('.pq-masonry').length > 0) {
+      // Do something if class exists
 
 
-   jQuery('.pq-masonry').isotope({
-      itemSelector: '.pq-masonry-item',
-      masonry: {
-         columnWidth: '.grid-sizer',
-         gutter: 0
+      jQuery('.pq-masonry').isotope({
+         itemSelector: '.pq-masonry-item',
+         masonry: {
+            columnWidth: '.grid-sizer',
+            gutter: 0
 
+         }
+
+      });
+
+      jQuery('.pq-grid').isotope({
+         itemSelector: '.pq-grid-item',
+      });
+
+      jQuery('.pq-filter-button-group').on('click', '.pq-filter-btn', function () {
+
+         var filterValue = jQuery(this).attr('data-filter');
+         jQuery('.pq-masonry').isotope({
+            filter: filterValue
+         });
+         jQuery('.pq-grid').isotope({
+            filter: filterValue
+         });
+         jQuery('.pq-filter-button-group .pq-filter-btn').removeClass('active');
+         jQuery(this).addClass('active');
+
+
+      });
+
+      var initial_items = 6;
+      var next_items = 3;
+
+      if (jQuery('.pq-masonry').length > 0) {
+         var initial_items = jQuery('.pq-masonry').data('initial_items');
+         var next_items = jQuery('.pq-masonry').data('next_items');
       }
 
-   });
-
-   jQuery('.pq-grid').isotope({
-      itemSelector: '.pq-grid-item',
-   });
-
-   jQuery('.pq-filter-button-group').on('click', '.pq-filter-btn', function () {
-
-      var filterValue = jQuery(this).attr('data-filter');
-      jQuery('.pq-masonry').isotope({
-         filter: filterValue
-      });
-      jQuery('.pq-grid').isotope({
-         filter: filterValue
-      });
-      jQuery('.pq-filter-button-group .pq-filter-btn').removeClass('active');
-      jQuery(this).addClass('active');
-
-
-   });
-
-   var initial_items = 6;
-   var next_items = 3;
-
-   if (jQuery('.pq-masonry').length > 0) {
-      var initial_items = jQuery('.pq-masonry').data('initial_items');
-      var next_items = jQuery('.pq-masonry').data('next_items');
-   }
-
-   if (jQuery('.pq-grid').length > 0) {
-      var initial_items = jQuery('.pq-grid').data('initial_items');
-      var next_items = jQuery('.pq-grid').data('next_items');
-   }
+      if (jQuery('.pq-grid').length > 0) {
+         var initial_items = jQuery('.pq-grid').data('initial_items');
+         var next_items = jQuery('.pq-grid').data('next_items');
+      }
 
    }
 

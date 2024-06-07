@@ -1,4 +1,4 @@
-# [Riso](https://lebryere.github.io/Riso/index.php)
+# [Riso](https://lebryere.github.io/Riso/)
 
 ## Browser Support
 
